@@ -35,3 +35,8 @@ input, select {
     margin-bottom: 10px;
     display: block;
 }
+
+table, td, th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
