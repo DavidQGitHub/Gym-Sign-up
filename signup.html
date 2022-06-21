@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym Sign Up</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form action="www.bbc.co.uk" method="get"><!-- this should really be a POST-->
+                <label for="title">Title *</label>
+                <select id="title" name="title" required>
+                    <option disabled selected>-- select one --</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                </select>
+
+                <label for="firstName">First Name: *</label>
+                <input type="text" name="firstName" id="firstName" required>
+                
+                <label for="surname">Surame: *</label>
+                <input type="text" name="surname" id="surname" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+
+                <label>Membership level *</label
+                <div class="radio-container">
+                    <input type="radio" id="full" value="full">
+                    <label class="radio-label">Full Access</label>
+                                
+                    <input type="radio" id="Off" value="off">
+                    <label class="radio-label">Off Peak</label>
+                
+                    <input type="radio" id="allg" value="allg">
+                    <label class="radio-label">All Gyms</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
