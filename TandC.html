@@ -5,13 +5,66 @@
         <link href="styles.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+        rel="stylesheet">
+
+        <script>
+            console.log("Hello");
+            let myName = "DQ";
+            console.log(myName);
+            
+            //define variables
+            var x = 1;
+            let name = "DQ";
+            const age = 99;
+            const myArray = ["red", "blue", 123456];
+
+            // string
+            const str1 = `My name is ${name}`;
+            const str2 = `My name is` + name;
+
+            // object
+            const customer = {
+                name: "dq",
+                age : 21,
+                children: ["Ryan", "Aidan"]
+            }
+
+            const customer2 = {...customer, age:33, surname:"Quinn"};
+            console.log(customer2);
+
+            //function
+            function printHello(name) {
+                console.log(`I am printing hello to ${name}`);
+            }
+
+            // lambda function in javascript - java uses -> instead of =>
+            const printHello2 = (name) => {
+                console.log(`I am printing hello to ${name}`);
+            };
+
+            const printHello3 = (name) => console.log(`I am printing hello to ${name}`);
+
+            //function
+            function change() {
+                let head2 = document.getElementsByClassName("header2");
+                let membertable = document.getElementsByClassName("member-table");
+                console.log(`I am changing`);
+                console.log(head2);
+                console.log(membertable);
+            }
+
+        </script>
     </head>
     <body>
         <h1>Terms and conditions</h1>
         <p>These are the ts and cs</p>
 
-        <table>
+        <h2 class="header2" onclick="change();"><span>&gt;</span>Table</h2>
+
+        <!-- <button onclick="printHello('DQ');printHello2('Aidan');">click me!</button> -->
+
+        <table class="member-table" style="display:none;">
             <tr><th>Mebership Type</th><th>Price</th></tr>
             <tr><td>Full membership</td><td>&euro; 300</td></tr>
             <tr><td>Off peak membership</td><td>&euro; 200</td></tr>

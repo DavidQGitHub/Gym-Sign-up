@@ -52,8 +52,17 @@
                 <input type="checkbox" name="acceptedTandC" value="yes"
                  id="acceptedTandC">
 
+                <script>
+                    const onsubmit = () => {
+                        let firstNameInput = document.getElementById("firstName");
+                        console.log(firstNameInput);
+                    
+                        let labels = document.getElementsByClassName("radio-label");
+                        console.log(labels);
+                    };
+                </script>
 
-                <button type="submit">Submit</button>
+                <button onclick="onsubmit();" type="button">Submit</button>
             </form>
             
         </div>
